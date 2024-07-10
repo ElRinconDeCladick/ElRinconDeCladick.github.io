@@ -1,19 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Rincón de Cladick</title>
+    <title>ElRincondeCladick</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
             background-color: #f0f0f0;
         }
         .container {
@@ -22,27 +20,39 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem auto;
         }
         h1 {
             color: #333;
         }
-        p {
-            color: #666;
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
         }
         img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
-            margin-top: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a El Rincón de Cladick</h1>
-        <p>Este es un espacio para el Módulo IV de Asistencia a la edicion.</p>tu_proyecto/
-│
-├── index.html
-└── images/
-    └── IMG-20240622-WA0031.jpg
+        <h1>ElRincondeCladick</h1>
+        <div class="images">
+            <img src="images/images1.jpg" alt="Images 1">
+            <img src="images/images2.jpg" alt="Images 2">
+            <img src="images/images3.jpg" alt="Images 3">
+            <img src="images/images4.jpg" alt="Images 4">
+            <img src="images/images5.jpg" alt="Images 5">
+            <img src="images/images6.jpg" alt="Images 6">
+            <img src="images/images7.jpg" alt="Images 7">
+        </div>
+    </div>
 </body>
 </html>
