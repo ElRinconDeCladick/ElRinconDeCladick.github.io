@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Rincón de Cladick</title>
+    <title>Modulo IV Practico</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column-reverse;
             align-items: center;
-            height: 100vh;
             background-color: #f0f0f0;
         }
         .container {
@@ -21,26 +20,60 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem auto;
         }
         h1 {
             color: #333;
         }
-        p {
-            color: #666;
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
         }
         img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
-            margin-top: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .license {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        .license a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+        }
+        .license img {
+            height: 22px !important;
+            margin-left: 3px;
+            vertical-align: text-bottom;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a El Rincón de Cladick</h1>
-        <p>Este es un espacio donde compartiremos ideas, proyectos y más.</p>
-        <img src="images/IMG-20240622-WA0031.jpg" alt="Imagen de puros">
+        <h1>Modulo IV Practico</h1>
+        <div class="images">
+            <img src="images/images1.jpg" alt="images1">
+            <img src="images/images2.jpg" alt="images2">
+            <img src="images/images3.jpg" alt="images3">
+            <img src="images/images4.jpg" alt="images4">
+            <img src="images/images5.jpg" alt="images5">
+            <p class="license" xmlns:cc="http://creativecommons.org/ns#">Esta obra está marcada con 
+                <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer">
+                    CC0 1.0
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt="">
+                </a>
+            </p>
+            <img src="images/images6.jpg" alt="images6">
+            <img src="images/images7.jpg" alt="images7">
+        </div>
     </div>
 </body>
 </html>
-
