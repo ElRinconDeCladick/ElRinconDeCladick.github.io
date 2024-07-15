@@ -1,152 +1,156 @@
-<!DOCTYPE html >
-< html  lang = " es " >
-< cabeza >
-    < meta  charset = " UTF-8 " >
-    < meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
-    < título > Módulo IV Práctico </ título >
-    < estilo >
-        cuerpo {
-            familia de fuentes: Arial, sans-serif;
-            margen: 0;
-            relleno: 0;
-            pantalla:flexible;
-            flexión-dirección: columna-reversa;
-            alinear-elementos: centro;
-            color de fondo: #f0f0f0;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo IV Practico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            background-color: #f0f0f0;
         }
-        .envase {
-            alinear texto: centro;
-            color de fondo: blanco;
-            relleno: 2rem;
-            radio del borde: 8px;
-            caja-sombra: 0 0 10px rgba(0, 0, 0, 0.1);
-            ancho máximo: 800px;
-            ancho: 100%;
-            margen: 2rem auto;
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem auto;
         }
         h1 {
             color: #333;
         }
-        .imágenes {
-            pantalla: cuadrícula;
-            columnas de plantilla de cuadrícula: repetir (ajuste automático, minmax (200px, 1fr));
-            brecha: 2rem;
-            margen superior: 1rem;
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
         }
-        .contenedor de imágenes {
-            pantalla:flexible;
-            flex-direccion: columna;
-            alinear-elementos: centro;
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        imagen {
-            ancho: 100%;
-            altura:auto;
-            radio del borde: 8px;
-            caja-sombra: 0 0 10px rgba(0, 0, 0, 0.1);
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .licencia {
-            margen superior: 0.5rem;
-            tamaño de fuente: 0.9rem;
-            alinear texto: centro;
+        .license {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            text-align: center;
         }
-        .licencia a {
-            pantalla: bloque en línea;
-            decoración de texto: ninguna;
+        .license a {
+            display: inline-block;
+            text-decoration: none;
             color: #333;
         }
-        .licencia img {
-            altura: 22px !importante;
-            margen izquierdo: 3px;
-            alineación vertical: texto inferior;
+        .license img {
+            height: 22px !important;
+            margin-left: 3px;
+            vertical-align: text-bottom;
         }
-    </ estilo >
-</cabeza>​​
-< cuerpo >
-    < div  class =" contenedor " >
-        < h1 > Módulo IV Práctico </ h1 >
-        < div  class =" imágenes " >
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imágenes1.jpg " alt = " imágenes1 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > Me Fumo Un Puro </ span > de < span  property =" cc:attributionName " > Ivan </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1 " target =" _blank " rel =" licencia sin abridor ni referenciador " style =" display:inline-block; " >
-                        Licencia CC BY-NC-ND 4.0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/by.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/nc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/nd.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
-            </div>​​
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imágenes2.jpg " alt = " imágenes2 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > Esperita </ ​​span > de < span  property =" cc:attributionName " > Jose </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1 " target =" _blank " rel =" licencia sin abridor ni referenciador " style =" display:inline-block; " >
-                        CC BY-NC 4.0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/by.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/nc.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
-            </div>​​
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imágenes3.jpg " alt = " imágenes3 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > Puritos </ span > de < span  property =" cc:attributionName " > José </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1 " target =" _blank " rel =" licencia sin abridor ni referenciador " style =" display:inline-block; " >
-                        Licencia CC BY-NC-SA 4.0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/by.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/nc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/sa.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
-            </div>​​
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imágenes4.jpg " alt = " imágenes4 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > Granizado </ span > de < span  property =" cc:attributionName " > José </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1 " target =" _blank " rel =" licencia sin abridor ni referenciador " style =" display:inline-block; " >
-                        CC BY-ND 4.0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/by.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/nd.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
-            </div>​​
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imagenes5.jpg " alt = " imágenes5 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > BUu Se fuma un piti </ span > de < span  property =" cc:attributionName " > YO </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1 " target =" _blank " rel =" licencia sin abridor ni referenciador " style =" display:inline-block; " >
-                        CC BY-SA 4.0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/by.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/sa.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
-            </div>​​
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imágenes6.jpg " alt = " imágenes6 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > Granito seco </ span > de < span  property =" cc:attributionName " > YO </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1 " target =" _blank " rel =" licencia noopener noreferrer " style =" display:inline-block; " >
-                        1.0 CC0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/zero.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
-            </div>​​
-            < div  class =" contenedor-de-imagen " >
-                < img  src = " imágenes/imagenes7.jpg " alt = " imágenes7 " >
-                < p  class =" licencia " xmlns:cc =" http://creativecommons.org/ns# " xmlns:dct =" http://purl.org/dc/terms/ " >
-                    < span  property =" dct:title " > Stand Samsung Feria Málaga </ span > de < span  property =" cc:attributionName " > Jose </ span > tiene licencia
-                    < a  href =" https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1 " target =" _blank " rel =" licencia sin abridor ni referenciador " style =" display:inline-block; " >
-                        CC BY-ND 4.0
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/cc.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/by.svg ? ref=chooser-v1 " alt = " >
-                        < img  style = " altura: 22px! importante; margen izquierdo: 3px; alineación vertical: texto inferior; " src = " https://mirrors.creativecommons.org/presskit/icons/nd.svg ? ref=chooser-v1 " alt = " >
-                    </a>​​
-                </p>​​
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modulo IV Practico</h1>
+        <div class="images">
+            <div class="image-container">
+                <img src="Imágenes1.jpg" alt="images1">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">Me Fumo UN Puro</span> de <span property="cc:attributionName">Ivan</span> tiene licencia 
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC BY-NC-ND 4.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
             </div>
+            <div class="image-container">
+                <img src="images/images2.jpg" alt="images2">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">Esperita</span> de <span property="cc:attributionName">Jose</span> tiene licencia 
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC BY-NC 4.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/images3.jpg" alt="images3">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">Puritos</span> de <span property="cc:attributionName">José</span> tiene licencia 
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC BY-NC-SA 4.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/images4.jpg" alt="images4">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">Granizado</span> de <span property="cc:attributionName">Jose</span> tiene licencia 
+                    <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC BY-ND 4.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/images5.jpg" alt="images5">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">BUu Se fuma un piti</span> de <span property="cc:attributionName">YO</span> tiene licencia 
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC BY-SA 4.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/images6.jpg" alt="images6">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">Grani seco</span> de <span property="cc:attributionName">YO</span> tiene licencia 
+                    <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC0 1.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/images7.jpg" alt="images7">
+                <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">Stand Samsung Feria Málaga</span> de <span property="cc:attributionName">Jose</span> tiene licencia 
+                    <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                        CC BY-ND 4.0
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
