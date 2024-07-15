@@ -104,7 +104,7 @@
                 </p>
             </div>
             <div class="image-container">
-                <img src="images/images4.jpg" alt="images4">
+                <img src="Imágenes4.jpg" alt="images4">
                 <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
                     <span property="dct:title">Granizado</span> de <span property="cc:attributionName">Jose</span> tiene licencia 
                     <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
