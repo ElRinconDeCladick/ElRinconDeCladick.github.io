@@ -79,7 +79,7 @@
                 </p>
             </div>
             <div class="image-container">
-                <img src="images/images2.jpg" alt="images2">
+                <img src="Imágenes2.jpg" alt="images2">
                 <p class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
                     <span property="dct:title">Esperita</span> de <span property="cc:attributionName">Jose</span> tiene licencia 
                     <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
